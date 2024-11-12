@@ -16,13 +16,7 @@ const userData = {
     }
 } 
 
-// Create message element with dynamic classes and return it 
-const createMessageElement = (content, ...classes) => { 
-    const div = document.createElement("div"); 
-    div.classList.add("message", ...classes); 
-    div.innerHTML = content; 
-    return div; 
-}
+
 
 const generateBotResponse = async (incomingMessageDiv) => {
     const messageElement = incomingMessageDiv.querySelector(".message-text");
